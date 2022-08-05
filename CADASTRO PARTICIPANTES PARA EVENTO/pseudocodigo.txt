@@ -1,0 +1,24 @@
+algoritmo "Sistema de Cadastro de Eventos"
+var
+de, da, idade, qp
+inicio
+	ler(da)
+	ler(de)
+	ler(idade)
+	ler(qp)
+	se qp<100 então
+		escrever("Permitir cadastro")
+		se da<de então
+			escrever("Evento Permitido")
+			se idade>18 então
+				escrever(Cadastro Permitido")
+			senão
+				escrever("Idade não Permitida")
+			fimse
+		senão
+			escrever ("Data Invalida")
+		fimse
+	senão
+		escrever("Limite de Cadastro Excedido")
+	fimse		
+fim
